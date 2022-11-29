@@ -3,9 +3,16 @@
     "name": "web",
     "slug": "web",
     "version": "0.0.1",
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "web": {
       "favicon": "./public/static/images/icons/favicon/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "a51da4ab-283d-4b28-af35-64c7f76a24a9"
+      }
     }
   }
 }
