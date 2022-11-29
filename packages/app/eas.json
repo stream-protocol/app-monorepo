@@ -1,38 +1,22 @@
 {
   "cli": {
-    "version": ">= 0.37.0"
+    "version": ">= 2.8.0"
   },
   "build": {
-    "base": {
-      "android": {
-        "image": "ubuntu-20.04-jdk-11-ndk-r21e",
-        "ndk": "23.1.7779620",
-        "env": {
-          "PLATFORM": "android",
-          "OTA_UPDATE_ENABLE": "false"
-        }
-      },
-      "ios": {
-        "image": "macos-monterey-12.3-xcode-13.3",
-        "env": {
-          "PLATFORM": "ios"
-        }
-      }
-    },
     "development": {
-      "extends": "base",
       "developmentClient": true,
-      "env": {
-        "ENVIRONMENT": "development"
-      },
-      "distribution": "internal",
-      "android": {
-        "buildType": "apk",
-        "gradleCommand": ":app:assembleDebug",
-        "env": {
-          "APPLICATION_ID_SUFFIX": "wrapper",
-          "OTA_UPDATE_ENABLE": "true"
-        }
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal"
+    },
+    "production": {}
+  },
+  "submit": {
+    "production": {}
+  }
+}
+
       },
       "ios": {
         "enterpriseProvisioning": "adhoc",
