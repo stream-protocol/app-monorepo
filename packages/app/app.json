@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "web",
-    "slug": "web",
+    "slug": "stream-wallet-app",
     "version": "0.0.1",
     "assetBundlePatterns": [
       "**/*"
@@ -11,9 +11,12 @@
     },
     "extra": {
       "eas": {
-        "projectId": "a51da4ab-283d-4b28-af35-64c7f76a24a9"
+        "projectId": "30043fb6-0bde-417e-b28f-3b63cab6d74f"
       }
+    },
+    "owner": "streamprotocol",
+    "android": {
+      "package": "com.streamprotocol.streamwalletapp"
     }
   }
 }
-
